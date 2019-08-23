@@ -18,10 +18,16 @@
 </template>
 
 <script>
+import { getTodayDay, getMonthString } from '../helpers/date';
+
 export default {
   name: 'Default',
+  data(){
+    return {
+      date: `${getTodayDay()} ${getMonthString()}`
+    }
+  },
   props: {
-    date: String,
     changelog: String,
     data: Object,
   },

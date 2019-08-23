@@ -4,8 +4,7 @@
       <div class="preview-container">
         <DefaultTemplate
         :changelog="this.$store.state.changelog"
-        :data="this.$store.state.romData"
-        date="20 August" />
+        :data="this.$store.state.romData" />
       </div>
     </div>
   </div>
