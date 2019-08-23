@@ -33,6 +33,10 @@ export default new Vuex.Store({
     changeRom({ commit }, props) {
       commit('setRom', props);
     },
+    changeTemplate({ commit }, props) {
+      commit('setTemplate', props);
+      console.log(this.state.template)
+    },
     changeChangelog({ commit }, props) {
       commit('setChangelog', props);
     },

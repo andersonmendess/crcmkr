@@ -2,7 +2,8 @@
   <div class="body">
     <div id="preview-node" class="preview">
       <div class="preview-container">
-        <DefaultTemplate
+        <component
+        :is="template"
         :changelog="this.$store.state.changelog"
         :data="this.$store.state.romData" />
       </div>
@@ -11,13 +12,20 @@
 </template>
 
 <script>
-import DefaultTemplate from '../templates/Default.vue';
+import templates from '../templates';
 
 export default {
   name: 'PreviewBox',
-  components: {
-    DefaultTemplate,
+  data(){
+    return {
+      template: templates[this.$store.state.template]
+    }
   },
+  watch:{
+  '$store.state.template'(value, oldValue) {
+    this.template = templates[value]
+  }
+}
 };
 </script>
 

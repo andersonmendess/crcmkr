@@ -2,8 +2,13 @@
   <div class="input">
     <div class="input-container">
       <label for="select">ROM:</label>
-      <select v-model="selected" id="select">
-        <option v-for="rom in romsAvailable" :key="rom">{{rom}}</option>
+      <select v-model="selectedRom" id="select">
+        <option v-for="rom in roms" :key="rom">{{rom}}</option>
+      </select>
+
+      <label for="select">Template:</label>
+      <select v-model="selectedTemplate" id="select">
+        <option v-for="template in templates" :key="template">{{template}}</option>
       </select>
 
       <label for="changelog">Changelog:</label>
@@ -21,13 +26,15 @@ export default {
   name: 'InputBox',
   data() {
     return {
-      selected: 'LineageOS',
+      selectedRom: 'LineageOS',
+      selectedTemplate: 'Default',
       changelog: '',
     };
   },
   updated() {
     this.$store.dispatch('changeChangelog', this.changelog);
-    this.$store.dispatch('changeRom', this.selected);
+    this.$store.dispatch('changeRom', this.selectedRom);
+    this.$store.dispatch('changeTemplate', this.selectedTemplate);
     this.$store.dispatch('loadRomData');
   },
   methods: {
@@ -43,7 +50,8 @@ export default {
     },
   },
   props: {
-    romsAvailable: Array,
+    roms: Array,
+    templates: Array,
   },
 };
 </script>

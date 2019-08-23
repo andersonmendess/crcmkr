@@ -5,7 +5,9 @@
     </div>
     <div class="boxs">
       <PreviewBox />
-      <InputBox :romsAvailable="romsAvailable" />
+      <InputBox
+      :roms="romsAvailable"
+      :templates="templatesAvailable" />
     </div>
   </div>
 </template>
@@ -15,17 +17,18 @@ import InputBox from './components/InputBox.vue';
 import PreviewBox from './components/PreviewBox.vue';
 
 import roms from './roms';
+import templates from './templates';
 
 export default {
   name: 'app',
   data() {
     return {
       romsAvailable: roms.list,
+      templatesAvailable: templates.list
     };
   },
   mounted() {
     this.$store.dispatch('loadRomData');
-    console.log(this.$store.state.romData);
   },
   components: {
     InputBox,
