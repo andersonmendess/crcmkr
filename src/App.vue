@@ -23,8 +23,8 @@ export default {
   name: 'app',
   data() {
     return {
-      romsAvailable: roms.list,
-      templatesAvailable: templates.list,
+      romsAvailable: Object.keys(roms),
+      templatesAvailable: Object.keys(templates),
     };
   },
   mounted() {

@@ -6,14 +6,6 @@ import Bootleggers from './Bootleggers';
 import ResurrectionRemix from './ResurrectionRemix';
 
 export default {
-  list: [
-    'LineageOS',
-    'PixelExperience',
-    'KrakenProject',
-    'HavocOS',
-    'Bootleggers',
-    'ResurrectionRemix',
-  ],
   LineageOS,
   PixelExperience,
   KrakenProject,
