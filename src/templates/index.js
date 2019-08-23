@@ -1,10 +1,10 @@
 import Default from './Default';
-import Clean from './Clean';
-import Square from './Square';
+import Dark from './Dark';
+import Black from './Black';
 
 export default {
-  list: ['Default', 'Clean', 'Square'],
+  list: ['Default', 'Dark', 'Black'],
   Default,
-  Clean,
-  Square
+  Dark,
+  Black
 };

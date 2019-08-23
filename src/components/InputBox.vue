@@ -43,7 +43,7 @@ export default {
         .toPng(document.getElementById('preview-node'), { quality: 1 })
         .then((dataUrl) => {
           const link = document.createElement('a');
-          link.download = `${this.selected}-changelog-crcmkr.png`;
+          link.download = `${this.selectedRom}-changelog-crcmkr.png`;
           link.href = dataUrl;
           link.click();
         });

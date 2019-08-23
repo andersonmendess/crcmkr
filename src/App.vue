@@ -38,6 +38,11 @@ export default {
 </script>
 
 <style>
+
+:root {
+  --romColor: #000;
+}
+
 body {
   background-color: #653abc;
 }
@@ -59,5 +64,9 @@ body {
   width: 100%;
   justify-content: space-around;
   margin-top: 40px;
+}
+
+.rom-color {
+  color: var(--romColor);
 }
 </style>

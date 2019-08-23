@@ -20,29 +20,28 @@
 </template>
 
 <script>
-import { getTodayDay, getMonthString } from "../helpers/date";
+import { getTodayDay, getMonthString } from '../helpers/date';
 
 export default {
-  name: "Default",
-  data() {
+  name: 'Default',
+  data(){
     return {
       date: `${getTodayDay()} ${getMonthString()}`
-    };
+    }
   },
   props: {
     changelog: String,
-    data: Object
-  }
+    data: Object,
+  },
 };
 </script>
 
 <style scoped>
 .template {
   width: 100%;
-  margin: auto;
   padding-bottom: 30px;
   padding-top: 10px;
-  background-color: #fafafa;
+  background-color: #1A1C1F;
 }
 .limited-container {
   width: 550px;
@@ -82,7 +81,7 @@ export default {
 }
 
 .preview .changelog {
-  border: 1px solid #d3d3d3;
+  border: 1px solid #2a2e33;
   border-radius: 2px;
   max-height: 190px;
   overflow: hidden;
@@ -95,7 +94,7 @@ pre,
 }
 pre {
   font-size: 17px;
-  color: #666;
+  color: #edeaea;
   margin-top: 1px;
   margin-bottom: 1px;
 }

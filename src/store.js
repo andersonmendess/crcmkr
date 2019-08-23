@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 import roms from './roms';
+import { setRomColor } from './helpers/css';
 
 Vue.use(Vuex);
 
@@ -29,13 +30,13 @@ export default new Vuex.Store({
   actions: {
     loadRomData({ commit }) {
       commit('setRomData', roms[this.state.rom]);
+      setRomColor(this.state.romData.primaryTextColor);
     },
     changeRom({ commit }, props) {
       commit('setRom', props);
     },
     changeTemplate({ commit }, props) {
       commit('setTemplate', props);
-      console.log(this.state.template)
     },
     changeChangelog({ commit }, props) {
       commit('setChangelog', props);
