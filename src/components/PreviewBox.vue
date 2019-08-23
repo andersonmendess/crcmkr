@@ -14,16 +14,16 @@ import templates from '../templates';
 
 export default {
   name: 'PreviewBox',
-  data(){
+  data() {
     return {
-      template: templates[this.$store.state.template]
-    }
+      template: templates[this.$store.state.template],
+    };
   },
-  watch:{
-  '$store.state.template'(value, oldValue) {
-    this.template = templates[value]
-  }
-}
+  watch: {
+    '$store.state.template': function (value) {
+      this.template = templates[value];
+    },
+  },
 };
 </script>
 

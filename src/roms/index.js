@@ -12,12 +12,12 @@ export default {
     'KrakenProject',
     'HavocOS',
     'Bootleggers',
-    'ResurrectionRemix'
+    'ResurrectionRemix',
   ],
   LineageOS,
   PixelExperience,
   KrakenProject,
   HavocOS,
   Bootleggers,
-  ResurrectionRemix
+  ResurrectionRemix,
 };

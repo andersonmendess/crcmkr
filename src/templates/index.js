@@ -6,5 +6,5 @@ export default {
   list: ['Default', 'Dark', 'Black'],
   Default,
   Dark,
-  Black
+  Black,
 };

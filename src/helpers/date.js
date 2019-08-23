@@ -3,8 +3,8 @@ const getTodayDay = () => new Date().getDate();
 const getTodayMonth = () => new Date().getMonth() + 1;
 
 const getMonthString = () => {
-  let monthNumber = getTodayMonth();
-  let months = [null,
+  const monthNumber = getTodayMonth();
+  const months = [null,
     'January',
     'February',
     'March',
@@ -16,11 +16,11 @@ const getMonthString = () => {
     'September',
     'October',
     'November',
-    'December'
+    'December',
   ];
 
   return months[monthNumber];
 };
 
 
-export { getTodayDay, getMonthString }
+export { getTodayDay, getMonthString };

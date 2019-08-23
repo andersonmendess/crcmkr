@@ -20,19 +20,19 @@
 </template>
 
 <script>
-import { getTodayDay, getMonthString } from "../helpers/date";
+import { getTodayDay, getMonthString } from '../helpers/date';
 
 export default {
-  name: "Default",
+  name: 'Default',
   data() {
     return {
-      date: `${getTodayDay()} ${getMonthString()}`
+      date: `${getTodayDay()} ${getMonthString()}`,
     };
   },
   props: {
     changelog: String,
-    data: Object
-  }
+    data: Object,
+  },
 };
 </script>
 
@@ -84,7 +84,7 @@ export default {
 .preview .changelog {
   border: 1px solid #d3d3d3;
   border-radius: 2px;
-  max-height: 190px;
+  max-height: 200px;
   overflow: hidden;
   padding: 5px;
 }

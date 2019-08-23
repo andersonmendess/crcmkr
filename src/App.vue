@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       romsAvailable: roms.list,
-      templatesAvailable: templates.list
+      templatesAvailable: templates.list,
     };
   },
   mounted() {

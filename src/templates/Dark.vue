@@ -24,10 +24,10 @@ import { getTodayDay, getMonthString } from '../helpers/date';
 
 export default {
   name: 'Default',
-  data(){
+  data() {
     return {
-      date: `${getTodayDay()} ${getMonthString()}`
-    }
+      date: `${getTodayDay()} ${getMonthString()}`,
+    };
   },
   props: {
     changelog: String,
@@ -83,7 +83,7 @@ export default {
 .preview .changelog {
   border: 1px solid #2a2e33;
   border-radius: 2px;
-  max-height: 190px;
+  max-height: 200px;
   overflow: hidden;
   padding: 5px;
 }
