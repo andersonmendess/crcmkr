@@ -63,6 +63,7 @@ export default {
 .preview .header h1 {
   font-weight: 300;
   font-size: 35px;
+  white-space: nowrap;
 }
 
 .preview .sub-header {
@@ -78,7 +79,7 @@ export default {
 }
 
 .date {
-  width: 100px;
+  white-space: nowrap;
 }
 
 .preview .changelog {
