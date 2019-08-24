@@ -28,10 +28,17 @@ const nightOwl = {
   text: '#C1C8D0'
 }
 
+const purple = {
+  background: '#27234B',
+  foreground: '#2f2b5b',
+  text: '#C1C8D0'
+}
+
 export default {
   light,
   dark,
   black,
   dracula,
-  nightOwl
+  nightOwl,
+  purple
 }
