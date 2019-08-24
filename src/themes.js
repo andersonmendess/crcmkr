@@ -22,9 +22,16 @@ const dracula = {
   text: '#f8f8f2'
 }
 
+const nightOwl = {
+  background: '#001527',
+  foreground: '#001c33',
+  text: '#C1C8D0'
+}
+
 export default {
   light,
   dark,
   black,
-  dracula
+  dracula,
+  nightOwl
 }
