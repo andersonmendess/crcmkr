@@ -11,6 +11,11 @@
         <option v-for="template in templates" :key="template">{{template}}</option>
       </select>
 
+      <label for="select">Theme:</label>
+      <select v-model="selectedTheme" id="select">
+        <option v-for="theme in themes" :key="theme">{{theme}}</option>
+      </select>
+
       <label for="changelog">Changelog:</label>
       <textarea rows="9" id="changelog" v-model="changelog"></textarea>
 
@@ -28,6 +33,7 @@ export default {
     return {
       selectedRom: 'LineageOS',
       selectedTemplate: 'Default',
+      selectedTheme: 'light',
       changelog: '',
     };
   },
@@ -35,6 +41,7 @@ export default {
     this.$store.dispatch('changeChangelog', this.changelog);
     this.$store.dispatch('changeRom', this.selectedRom);
     this.$store.dispatch('changeTemplate', this.selectedTemplate);
+    this.$store.dispatch('changeTheme', this.selectedTheme);
     this.$store.dispatch('loadRomData');
   },
   methods: {
@@ -52,6 +59,7 @@ export default {
   props: {
     roms: Array,
     templates: Array,
+    themes: Array
   },
 };
 </script>

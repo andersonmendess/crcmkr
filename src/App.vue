@@ -7,7 +7,8 @@
       <PreviewBox />
       <InputBox
       :roms="romsAvailable"
-      :templates="templatesAvailable" />
+      :templates="templatesAvailable"
+      :themes="themesAvailable" />
     </div>
   </div>
 </template>
@@ -18,6 +19,7 @@ import PreviewBox from './components/PreviewBox.vue';
 
 import roms from './roms';
 import templates from './templates';
+import themes from './themes';
 
 export default {
   name: 'app',
@@ -25,6 +27,7 @@ export default {
     return {
       romsAvailable: Object.keys(roms),
       templatesAvailable: Object.keys(templates),
+      themesAvailable: Object.keys(themes)
     };
   },
   mounted() {
@@ -41,6 +44,21 @@ export default {
 
 :root {
   --romColor: #000;
+  --background: #FAFAFA;
+  --foreground: #D3D3D3;
+  --text: #666666;
+}
+.rom-color {
+  color: var(--romColor);
+}
+.background {
+  background-color: var(--background);
+}
+.foreground {
+  background-color: var(--foreground)
+}
+.text {
+  color: var(--text);
 }
 
 body {
@@ -66,7 +84,7 @@ body {
   margin-top: 40px;
 }
 
-.rom-color {
-  color: var(--romColor);
+h1, h2, h3, h4, h5, h6, p, b, a, div {
+  white-space: nowrap;
 }
 </style>

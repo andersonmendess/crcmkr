@@ -1,5 +1,5 @@
 <template>
-  <div class="template">
+  <div class="template background">
     <div class="limited-container">
       <div class="header">
         <img :src="data.img" alt="logo" class="logo" />
@@ -8,11 +8,11 @@
 
       <div class="sub-header">
         <h2 class="rom-color">Changelog</h2>
-        <h3 class="rom-color date">{{date}}</h3>
+        <h3 class="rom-color">{{date}}</h3>
       </div>
 
       <div class="changelog">
-        <pre>
+        <pre class="text">
 {{changelog}}</pre>
       </div>
     </div>
@@ -42,7 +42,7 @@ export default {
   margin: auto;
   padding-bottom: 30px;
   padding-top: 10px;
-  background-color: #fafafa;
+  background-color: var(--background)
 }
 .limited-container {
   width: 550px;
@@ -63,7 +63,6 @@ export default {
 .preview .header h1 {
   font-weight: 300;
   font-size: 35px;
-  white-space: nowrap;
 }
 
 .preview .sub-header {
@@ -78,12 +77,8 @@ export default {
   font-weight: 500;
 }
 
-.date {
-  white-space: nowrap;
-}
-
 .preview .changelog {
-  border: 1px solid #d3d3d3;
+  border: 1px solid var(--foreground);
   border-radius: 2px;
   max-height: 200px;
   overflow: hidden;
@@ -96,7 +91,6 @@ pre,
 }
 pre {
   font-size: 17px;
-  color: #666;
   margin-top: 1px;
   margin-bottom: 1px;
 }
