@@ -16,8 +16,15 @@ const black = {
   text: '#848484'
 };
 
+const dracula = {
+  background: '#282a36',
+  foreground: '#44475a',
+  text: '#f8f8f2'
+}
+
 export default {
   light,
   dark,
-  black
+  black,
+  dracula
 }
