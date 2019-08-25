@@ -5,6 +5,7 @@ import HavocOS from './HavocOS';
 import Bootleggers from './Bootleggers';
 import ResurrectionRemix from './ResurrectionRemix';
 import PixelExperiencePlus from './PixelExperiencePlus';
+import ViperOS from './ViperOS';
 
 export default {
   LineageOS,
@@ -14,4 +15,5 @@ export default {
   HavocOS,
   Bootleggers,
   ResurrectionRemix,
+  ViperOS
 };
