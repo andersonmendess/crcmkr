@@ -24,11 +24,11 @@
 
 <script>
 export default {
-  name: "Terminal",
+  name: 'Terminal',
   props: {
     changelog: String,
-    data: Object
-  }
+    data: Object,
+  },
 };
 </script>
 

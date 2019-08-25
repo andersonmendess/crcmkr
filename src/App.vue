@@ -11,29 +11,29 @@
 </template>
 
 <script>
-import InputBox from "./components/InputBox.vue";
-import PreviewBox from "./components/PreviewBox.vue";
+import InputBox from './components/InputBox.vue';
+import PreviewBox from './components/PreviewBox.vue';
 
-import roms from "./roms";
-import templates from "./templates";
-import themes from "./themes";
+import roms from './roms';
+import templates from './templates';
+import themes from './themes';
 
 export default {
-  name: "app",
+  name: 'app',
   data() {
     return {
       romsAvailable: Object.keys(roms),
       templatesAvailable: Object.keys(templates),
-      themesAvailable: Object.keys(themes)
+      themesAvailable: Object.keys(themes),
     };
   },
   mounted() {
-    this.$store.dispatch("loadRomData");
+    this.$store.dispatch('loadRomData');
   },
   components: {
     InputBox,
-    PreviewBox
-  }
+    PreviewBox,
+  },
 };
 </script>
 

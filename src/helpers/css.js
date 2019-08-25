@@ -8,6 +8,6 @@ const changeTheme = ({ background, foreground, text }) => {
   body.style.setProperty('--background', background);
   body.style.setProperty('--foreground', foreground);
   body.style.setProperty('--text', text);
-}
+};
 
 export { setRomColor, changeTheme };

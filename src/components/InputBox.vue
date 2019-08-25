@@ -61,7 +61,7 @@ export default {
   props: {
     roms: Array,
     templates: Array,
-    themes: Array
+    themes: Array,
   },
 };
 </script>

@@ -25,11 +25,11 @@ const getMonthString = () => {
 const getDatetimeNumbers = () => {
   const d = new Date();
 
-  let date = d.toISOString().slice(0, 10).replace(/-/g, '');
-  let time = d.toISOString().slice(11, 19).replace(/:/g, '');
+  const date = d.toISOString().slice(0, 10).replace(/-/g, '');
+  const time = d.toISOString().slice(11, 19).replace(/:/g, '');
 
   return `${date}-${time}`;
-}
+};
 
 
 export { getTodayDay, getMonthString, getDatetimeNumbers };

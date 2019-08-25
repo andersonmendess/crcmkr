@@ -7,5 +7,5 @@ export default {
   Default,
   Zeda,
   Zerk,
-  Terminal
+  Terminal,
 };
