@@ -11,6 +11,10 @@ import MoKee from './MoKee';
 import AospExtended from './AospExtended';
 import HydrusOS from './HydrusOS';
 import WaveOS from './WaveOS';
+import DirtyUnicorns from './DirtyUnicorns';
+import AOSiP from './AOSiP';
+import Omni from './Omni';
+import StatiXOS from './StatiXOS';
 
 
 export default {
@@ -26,6 +30,10 @@ export default {
   MoKee,
   AospExtended,
   HydrusOS,
-  WaveOS
+  WaveOS,
+  DirtyUnicorns,
+  AOSiP,
+  Omni,
+  StatiXOS,
 };
 
