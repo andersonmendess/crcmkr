@@ -5,24 +5,21 @@
     </div>
     <div class="boxs">
       <PreviewBox />
-      <InputBox
-      :roms="romsAvailable"
-      :templates="templatesAvailable"
-      :themes="themesAvailable" />
+      <InputBox :roms="romsAvailable" :templates="templatesAvailable" :themes="themesAvailable" />
     </div>
   </div>
 </template>
 
 <script>
-import InputBox from './components/InputBox.vue';
-import PreviewBox from './components/PreviewBox.vue';
+import InputBox from "./components/InputBox.vue";
+import PreviewBox from "./components/PreviewBox.vue";
 
-import roms from './roms';
-import templates from './templates';
-import themes from './themes';
+import roms from "./roms";
+import templates from "./templates";
+import themes from "./themes";
 
 export default {
-  name: 'app',
+  name: "app",
   data() {
     return {
       romsAvailable: Object.keys(roms),
@@ -31,21 +28,20 @@ export default {
     };
   },
   mounted() {
-    this.$store.dispatch('loadRomData');
+    this.$store.dispatch("loadRomData");
   },
   components: {
     InputBox,
-    PreviewBox,
-  },
+    PreviewBox
+  }
 };
 </script>
 
 <style>
-
 :root {
   --romColor: #000;
-  --background: #FAFAFA;
-  --foreground: #D3D3D3;
+  --background: #fafafa;
+  --foreground: #d3d3d3;
   --text: #666666;
 }
 .rom-color {
@@ -55,7 +51,7 @@ export default {
   background-color: var(--background);
 }
 .foreground {
-  background-color: var(--foreground)
+  background-color: var(--foreground);
 }
 .text {
   color: var(--text);
@@ -84,7 +80,21 @@ body {
   margin-top: 40px;
 }
 
-h1, h2, h3, h4, h5, h6, p, b, a, div {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+a,
+div {
   white-space: nowrap;
+}
+
+pre {
+  white-space:pre-wrap;
+  word-wrap: break-word;
 }
 </style>
