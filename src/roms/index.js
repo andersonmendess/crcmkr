@@ -7,6 +7,7 @@ import ResurrectionRemix from './ResurrectionRemix';
 import PixelExperiencePlus from './PixelExperiencePlus';
 import ViperOS from './ViperOS';
 import DotOS from './DotOS';
+import MoKee from './MoKee';
 
 export default {
   LineageOS,
@@ -17,5 +18,7 @@ export default {
   Bootleggers,
   ResurrectionRemix,
   ViperOS,
-  DotOS
+  DotOS,
+  MoKee
 };
+
