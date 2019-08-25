@@ -12,6 +12,7 @@ import AospExtended from './AospExtended';
 import HydrusOS from './HydrusOS';
 import WaveOS from './WaveOS';
 import DirtyUnicorns from './DirtyUnicorns';
+import AOSiP from './AOSiP';
 
 
 export default {
@@ -29,5 +30,6 @@ export default {
   HydrusOS,
   WaveOS,
   DirtyUnicorns,
+  AOSiP,
 };
 
