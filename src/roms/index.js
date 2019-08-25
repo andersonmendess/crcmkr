@@ -9,6 +9,8 @@ import ViperOS from './ViperOS';
 import DotOS from './DotOS';
 import MoKee from './MoKee';
 import AospExtended from './AospExtended';
+import HydrusOS from './HydrusOS';
+import WaveOS from './WaveOS';
 
 
 export default {
@@ -22,6 +24,8 @@ export default {
   ViperOS,
   DotOS,
   MoKee,
-  AospExtended
+  AospExtended,
+  HydrusOS,
+  WaveOS
 };
 
