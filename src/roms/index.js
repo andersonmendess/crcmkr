@@ -13,6 +13,7 @@ import HydrusOS from './HydrusOS';
 import WaveOS from './WaveOS';
 import DirtyUnicorns from './DirtyUnicorns';
 import AOSiP from './AOSiP';
+import Omni from './Omni';
 
 
 export default {
@@ -31,5 +32,6 @@ export default {
   WaveOS,
   DirtyUnicorns,
   AOSiP,
+  Omni,
 };
 
