@@ -14,6 +14,7 @@ import WaveOS from './WaveOS';
 import DirtyUnicorns from './DirtyUnicorns';
 import AOSiP from './AOSiP';
 import Omni from './Omni';
+import StatiXOS from './StatiXOS';
 
 
 export default {
@@ -33,5 +34,6 @@ export default {
   DirtyUnicorns,
   AOSiP,
   Omni,
+  StatiXOS,
 };
 
