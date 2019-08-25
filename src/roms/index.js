@@ -8,7 +8,9 @@ import PixelExperiencePlus from './PixelExperiencePlus';
 import ViperOS from './ViperOS';
 import DotOS from './DotOS';
 import MoKee from './MoKee';
-import AEX from './AEX';
+import AospExtended from './AospExtended';
+
+
 export default {
   LineageOS,
   PixelExperience,
@@ -20,6 +22,6 @@ export default {
   ViperOS,
   DotOS,
   MoKee,
-  AEX
+  AospExtended
 };
 
