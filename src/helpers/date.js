@@ -22,5 +22,14 @@ const getMonthString = () => {
   return months[monthNumber];
 };
 
+const getDatetimeNumbers = () => {
+  const d = new Date();
 
-export { getTodayDay, getMonthString };
+  let date = d.toISOString().slice(0, 10).replace(/-/g, '');
+  let time = d.toISOString().slice(11, 19).replace(/:/g, '');
+
+  return `${date}-${time}`;
+}
+
+
+export { getTodayDay, getMonthString, getDatetimeNumbers };

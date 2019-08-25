@@ -26,6 +26,7 @@
 
 <script>
 import domtoimage from 'dom-to-image';
+import { getDatetimeNumbers } from '../helpers/date';
 
 export default {
   name: 'InputBox',
@@ -50,7 +51,8 @@ export default {
         .toPng(document.getElementById('preview-node'), { quality: 1 })
         .then((dataUrl) => {
           const link = document.createElement('a');
-          link.download = `${this.selectedRom}-changelog-crcmkr.png`;
+          const now = getDatetimeNumbers();
+          link.download = `${this.selectedRom}-crcmkr-${now}.png`;
           link.href = dataUrl;
           link.click();
         });

@@ -1,6 +1,5 @@
 <template>
   <div class="template background">
-
     <div class="topbar">
       <div class="dots">
         <div class="dot-red"></div>
@@ -10,24 +9,26 @@
     </div>
 
     <div class="terminal-container">
-
-      <div><p class="text">{{data.name}} update!</p></div>
-      <div><p class="text">What's new?</p></div>
-      <div><pre class="text">{{changelog}}</pre></div>
-
+      <div>
+        <p class="text">{{data.name}} update!</p>
+      </div>
+      <div>
+        <p class="text">What's new?</p>
+      </div>
+      <div>
+        <pre class="text">{{changelog}}</pre>
+      </div>
     </div>
-
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'Terminal',
+  name: "Terminal",
   props: {
     changelog: String,
-    data: Object,
-  },
+    data: Object
+  }
 };
 </script>
 
@@ -57,15 +58,15 @@ export default {
 }
 
 .dots .dot-red {
-  background-color: #FF5F56;
+  background-color: #ff5f56;
 }
 
 .dots .dot-yellow {
-  background-color: #FFBD2E;
+  background-color: #ffbd2e;
 }
 
 .dots .dot-green {
-  background-color: #27C93F;
+  background-color: #27c93f;
 }
 
 .terminal-container {
@@ -78,5 +79,4 @@ export default {
 pre {
   font-size: 15px;
 }
-
 </style>
